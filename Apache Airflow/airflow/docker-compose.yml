@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  airflow:
+    build: .
+    container_name: sleek-airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow:/opt/airflow
+    command: airflow standalone
+
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_db:/var/lib/postgresql/data
+
+volumes:
+  postgres_db:
