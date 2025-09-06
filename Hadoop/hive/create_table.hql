@@ -1,0 +1,2 @@
+CREATE TABLE wordcount_results (word STRING, count INT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';
