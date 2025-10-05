@@ -16,7 +16,7 @@ Each folder inside this repository represents a tool or technology — and withi
 | **Snowflake/** | Cloud data warehouse integration and analytics |
 | **Databricks_Projects/** | Unified data engineering & machine learning notebooks |
 | **Tableau/** | Dashboard visualization of final transaction summaries |
-| **Stock_Market_Analysis/** | Analytical project focusing on time-series and insights |
+
 
 
 
